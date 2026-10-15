@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cool In Point – AC, Fridge, Washing Machine & Microwave Service, Rental & Bulk Orders</title>
+<meta name="description" content="Cool In Point: repair, servicing and maintenance of AC, fridge, washing machine and microwave. Electronics on rent. Tenders and bulk orders accepted. Call 9883344541.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0A2E4D;--frost:#EAF6FB;--cyan:#12A9D0;--sig:#FF7A1A;--white:#fff;--mute:#4F6B80;--line:#CFE3EE}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.55}
+h1,h2,h3{font-family:'Bricolage Grotesque','DM Sans',sans-serif;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sig);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--white);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+.logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.35rem;text-decoration:none}
+.logo span{color:var(--cyan)}
+nav{display:flex;gap:18px;font-weight:500;font-size:.95rem}
+nav a{text-decoration:none}
+nav a:hover{color:var(--cyan)}
+.btn{display:inline-block;background:var(--sig);color:#fff;font-weight:700;padding:12px 22px;border-radius:10px;text-decoration:none;border:0;cursor:pointer;font:inherit;font-weight:700}
+.btn.alt{background:var(--ink)}
+.btn.line{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn.sm{padding:8px 14px;font-size:.88rem;border-radius:8px}
+.hero{background:var(--ink);color:#fff;padding:64px 0 72px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-80px;top:-80px;width:340px;height:340px;border-radius:50%;border:2px solid rgba(18,169,208,.45);box-shadow:0 0 0 40px rgba(18,169,208,.08),0 0 0 90px rgba(18,169,208,.05)}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);font-weight:800;max-width:15ch}
+.hero p{max-width:52ch;margin:18px 0 26px;color:#CFE6F2;font-size:1.1rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn.line{color:#fff;border-color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;font-size:.92rem}
+.chips li{list-style:none;background:rgba(255,255,255,.1);padding:6px 14px;border-radius:99px}
+section{padding:64px 0}
+section.tint{background:var(--frost)}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:800;margin-bottom:8px}
+.sub{color:var(--mute);margin-bottom:28px;max-width:60ch}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.tab{padding:10px 18px;border-radius:99px;border:2px solid var(--ink);background:#fff;font:inherit;font-weight:700;cursor:pointer;color:var(--ink)}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff}
+.list{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 18px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row b{display:block}
+.row small{color:var(--mute)}
+.price{font-weight:800;font-size:1.15rem;white-space:nowrap;text-align:right}
+.price small{display:block;font-weight:400}
+.note{margin-top:14px;font-size:.9rem;color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{font-size:1.2rem;margin-bottom:6px}
+.card p{color:var(--mute);font-size:.95rem}
+.rent{display:flex;justify-content:space-between;align-items:baseline;margin-top:12px}
+.rent strong{font-size:1.4rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.ticks{padding:0;margin-top:14px}
+.ticks li{list-style:none;padding-left:26px;position:relative;margin:8px 0}
+.ticks li::before{content:"✓";position:absolute;left:0;color:var(--cyan);font-weight:800}
+form{display:grid;gap:12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+label{font-weight:700;font-size:.92rem}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid #9BBBCE;border-radius:8px;font:inherit;margin-top:4px;background:#fff;color:var(--ink)}
+footer{background:var(--ink);color:#CFE6F2;padding:56px 0 28px}
+footer h2{color:#fff}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin:22px 0 30px}
+.contact div{background:rgba(255,255,255,.08);border-radius:12px;padding:18px}
+.contact span{display:block;font-size:.85rem;color:#9FC4D8}
+.contact a{color:#fff;font-weight:700;font-size:1.25rem;text-decoration:none;display:block;margin-top:2px}
+.copy{border-top:1px solid rgba(255,255,255,.18);padding-top:18px;font-size:.88rem}
+.fab{position:fixed;right:16px;bottom:16px;z-index:6;background:#25D366;color:#fff;font-weight:700;padding:13px 18px;border-radius:99px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+@media(max-width:760px){nav{display:none}.two{grid-template-columns:1fr}section{padding:48px 0}.row{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Cool In <span>Point</span></a>
+    <nav aria-label="Main">
+      <a href="#prices">Service prices</a>
+      <a href="#rent">Rent</a>
+      <a href="#bulk">Tender &amp; bulk</a>
+      <a href="#book">Book</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn sm" href="tel:+919883344541">Call now</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <h1>Cooling, washing and cooking appliances fixed at your door.</h1>
+    <p>Cool In Point repairs, services and maintains ACs, fridges, washing machines and microwaves. We also rent out electronic products and handle tenders and bulk orders.</p>
+    <div class="cta">
+      <a class="btn" href="#book">Book a service</a>
+      <a class="btn line" href="#prices">See service prices</a>
+    </div>
+    <ul class="chips" style="padding:0">
+      <li>AC</li><li>Fridge</li><li>Washing machine</li><li>Microwave</li><li>Rental</li><li>Tender &amp; bulk orders</li>
+    </ul>
+  </div>
+</div>
+
+<section id="prices" class="tint">
+  <div class="wrap">
+    <h2>Service prices</h2>
+    <p class="sub">Clear starting prices, so you know the cost before the technician arrives. Choose an appliance, then book the service you need.</p>
+    <div class="tabs" role="tablist" aria-label="Appliance type" id="tabs"></div>
+    <div class="list" id="plist" role="tabpanel"></div>
+    <p class="note">Prices are starting prices and may change with the appliance model and the parts needed. Spare parts are charged separately after your approval. The inspection charge is adjusted in the final bill if you go ahead with the repair.</p>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <h2>Why choose Cool In Point</h2>
+    <p class="sub">Home service for all major brands.</p>
+    <div class="grid">
+      <div class="card"><h3>Fixed, upfront rates</h3><p>You see the starting price before you book. No surprise charges at the door.</p></div>
+      <div class="card"><h3>Experienced technicians</h3><p>Repair, installation, gas refill, deep cleaning and yearly maintenance by trained staff.</p></div>
+      <div class="card"><h3>Spare parts on approval</h3><p>We tell you the part and the price first. Work starts only after you agree.</p></div>
+      <div class="card"><h3>Yearly care plans</h3><p>Annual maintenance plans for homes, shops and offices with scheduled visits.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="rent" class="tint">
+  <div class="wrap">
+    <h2>Electronics on rent</h2>
+    <p class="sub">Rent AC, fridge, washing machine, microwave and more for a month, a season or a year. Installation, servicing and repair are included during the rental.</p>
+    <div class="grid" id="rentgrid"></div>
+    <p class="note">Rent depends on the product model and rental period. A refundable security deposit applies. Longer periods get lower monthly rent. Other electronic products are available on request, so call us.</p>
+  </div>
+</section>
+
+<section id="bulk">
+  <div class="wrap two">
+    <div>
+      <h2>Tender and bulk orders</h2>
+      <p class="sub">We take tenders and bulk orders for offices, hospitals, hotels, hostels, schools and housing societies.</p>
+      <ul class="ticks">
+        <li>Supply of ACs, fridges, washing machines, microwaves and other electronic products</li>
+        <li>Bulk servicing and yearly maintenance contracts</li>
+        <li>Bulk rental for hotels, PGs, hostels and event needs</li>
+        <li>Quotation and tender documents on request</li>
+      </ul>
+      <p style="margin-top:18px"><a class="btn alt" href="https://wa.me/919883344541?text=Hello%20Cool%20In%20Point%2C%20I%20want%20a%20quotation%20for%20a%20tender%2Fbulk%20order." target="_blank" rel="noopener">Ask for a bulk quote</a></p>
+    </div>
+    <form id="bulkform" aria-label="Bulk order enquiry">
+      <label>Organisation name<input name="org" required></label>
+      <label>Phone number<input name="ph" type="tel" required></label>
+      <label>What do you need?<textarea name="need" rows="3" placeholder="Example: 20 split ACs with yearly maintenance" required></textarea></label>
+      <button class="btn" type="submit">Send enquiry on WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section id="book" class="tint">
+  <div class="wrap two">
+    <div>
+      <h2>Book a service</h2>
+      <p class="sub">Fill in your details and send them to us on WhatsApp. We will call you to confirm the time.</p>
+      <ul class="ticks">
+        <li>Choose the appliance and service</li>
+        <li>Send your address and number</li>
+        <li>We confirm the visit time by phone</li>
+      </ul>
+    </div>
+    <form id="bookform" aria-label="Book a service">
+      <label>Your name<input name="name" required></label>
+      <label>Phone number<input name="ph" type="tel" required></label>
+      <label>Appliance<select name="app" id="appsel"></select></label>
+      <label>Service needed<select name="svc" id="svcsel"></select></label>
+      <label>Address<textarea name="addr" rows="2" required></textarea></label>
+      <button class="btn" type="submit">Book on WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Contact Cool In Point</h2>
+    <div class="contact">
+      <div><span>Owner</span><b style="color:#fff;font-size:1.25rem">Bappa Naskar</b></div>
+      <div><span>Phone</span><a href="tel:+919883344541">9883344541</a></div>
+      <div><span>Phone</span><a href="tel:+917439273776">7439273776</a></div>
+    </div>
+    <p class="copy">&copy; <span id="yr"></span> Cool In Point. AC, fridge, microwave and washing machine service, rental, tenders and bulk orders.</p>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/919883344541?text=Hello%20Cool%20In%20Point" target="_blank" rel="noopener">WhatsApp us</a>
+
+<script>
+const WA="919883344541";
+const DATA={
+ "AC":[
+  ["Split AC general service","Filter, coil and drain cleaning","₹499"],
+  ["Split AC jet pump deep clean","Full indoor and outdoor wash","₹799"],
+  ["Window AC service","Cleaning and cooling check","₹449"],
+  ["AC gas refill and leak check","Split AC, gas included","₹2,200"],
+  ["AC installation (split)","Mounting, piping and test run","₹1,500"],
+  ["AC uninstallation","Safe removal and gas pump-down","₹700"],
+  ["AC repair inspection","Fault checking at home","₹299"]
+ ],
+ "Fridge":[
+  ["Fridge repair inspection","Cooling, noise and leakage check","₹299"],
+  ["Single door fridge repair","Labour charge, parts extra","₹499"],
+  ["Double door / frost-free repair","Labour charge, parts extra","₹699"],
+  ["Fridge gas refill","Leak fix and gas, all types","₹1,800"],
+  ["Thermostat / relay / fan replacement","Labour charge, part extra","₹399"]
+ ],
+ "Washing machine":[
+  ["Washing machine inspection","Fault checking at home","₹299"],
+  ["Semi-automatic repair","Labour charge, parts extra","₹399"],
+  ["Top load fully automatic repair","Labour charge, parts extra","₹499"],
+  ["Front load repair","Labour charge, parts extra","₹599"],
+  ["Drum deep clean and descaling","Removes dirt, smell and scale","₹699"],
+  ["Installation and demo","Fitting, water line and test run","₹399"]
+ ],
+ "Microwave":[
+  ["Microwave inspection","Heating and fault check","₹249"],
+  ["Microwave repair","Labour charge, parts extra","₹449"],
+  ["Microwave deep cleaning","Inside and outside","₹399"],
+  ["Magnetron / capacitor replacement","Labour and part, on quotation","Quote"]
+ ],
+ "Yearly care plan":[
+  ["AC care plan","2 services a year for one split AC","₹899"],
+  ["Fridge care plan","2 checkups a year","₹599"],
+  ["Washing machine care plan","2 checkups and 1 deep clean","₹999"],
+  ["Office / shop / society plan","Many appliances, custom rate","Quote"]
+ ]
+};
+const RENT=[
+ ["Split AC 1.5 ton","Installation and servicing included","₹1,800"],
+ ["Window AC 1.5 ton","Servicing included","₹1,300"],
+ ["Double door fridge","Servicing included","₹1,200"],
+ ["Single door fridge","Servicing included","₹800"],
+ ["Washing machine","Semi or fully automatic","₹800"],
+ ["Microwave oven","Servicing included","₹500"]
+];
+const $=s=>document.querySelector(s);
+const enc=encodeURIComponent;
+let current="AC";
+function money(p){return p==="Quote"?"On quotation":p}
+function renderTabs(){
+ $("#tabs").innerHTML=Object.keys(DATA).map(k=>`<button class="tab" role="tab" aria-selected="${k===current}" data-k="${k}">${k}</button>`).join("");
+ document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{current=b.dataset.k;renderTabs();renderList()});
+}
+function renderList(){
+ $("#plist").innerHTML=DATA[current].map(([n,d,p])=>{
+  const msg=enc(`Hello Cool In Point, I want to book: ${n} (${current}).`);
+  return `<div class="row"><div><b>${n}</b><small>${d}</small></div><div style="display:flex;align-items:center;gap:14px"><div class="price">${p==="Quote"?"Quote":p}<small>${p==="Quote"?"call for rate":"starting price"}</small></div><a class="btn sm" target="_blank" rel="noopener" href="https://wa.me/${WA}?text=${msg}">Book</a></div></div>`}).join("");
+}
+$("#rentgrid").innerHTML=RENT.map(([n,d,p])=>`<div class="card"><h3>${n}</h3><p>${d}</p><div class="rent"><span><strong>${p}</strong> / month</span><a class="btn sm" target="_blank" rel="noopener" href="https://wa.me/${WA}?text=${enc("Hello Cool In Point, I want to rent: "+n)}">Rent</a></div></div>`).join("");
+$("#appsel").innerHTML=Object.keys(DATA).map(k=>`<option>${k}</option>`).join("");
+function fillSvc(){$("#svcsel").innerHTML=DATA[$("#appsel").value].map(r=>`<option>${r[0]}${r[2]==="Quote"?"":" - "+r[2]}</option>`).join("")}
+$("#appsel").onchange=fillSvc;
+$("#bookform").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);
+ const t=`New service booking%0AName: ${enc(f.get("name"))}%0APhone: ${enc(f.get("ph"))}%0AAppliance: ${enc(f.get("app"))}%0AService: ${enc(f.get("svc"))}%0AAddress: ${enc(f.get("addr"))}`;
+ window.open(`https://wa.me/${WA}?text=${t}`,"_blank")};
+$("#bulkform").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);
+ const t=`Tender / bulk order enquiry%0AOrganisation: ${enc(f.get("org"))}%0APhone: ${enc(f.get("ph"))}%0ARequirement: ${enc(f.get("need"))}`;
+ window.open(`https://wa.me/${WA}?text=${t}`,"_blank")};
+$("#yr").textContent=new Date().getFullYear();
+renderTabs();renderList();fillSvc();
+</script>
+</body>
+</html>
